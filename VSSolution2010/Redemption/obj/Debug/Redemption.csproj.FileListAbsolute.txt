@@ -1,0 +1,11 @@
+C:\Data\Edwin Solutions\Letrain Site\working\solution2010\Redemption\Redemption\bin\Redemption.dll
+C:\Data\Edwin Solutions\Letrain Site\working\solution2010\Redemption\Redemption\bin\Redemption.pdb
+C:\Data\Edwin Solutions\Letrain Site\working\solution2010\Redemption\Redemption\obj\Debug\Redemption.dll
+C:\Data\Edwin Solutions\Letrain Site\working\solution2010\Redemption\Redemption\obj\Debug\Redemption.pdb
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\bin\Redemption.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\bin\Redemption.pdb
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\bin\RedemptionData.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\bin\RedemptionData.pdb
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\obj\Debug\Redemption.csprojResolveAssemblyReference.cache
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\obj\Debug\Redemption.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\Redemption\obj\Debug\Redemption.pdb

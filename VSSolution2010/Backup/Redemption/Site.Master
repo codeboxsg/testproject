@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Redemption.SiteMaster" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Marshall Cavendish Education</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- responsive menu -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- CSS
+  ================================================== -->
+    <!-- responsive menu css -->
+    <!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link rel="stylesheet" href="css/step4.css">
+    <!--<![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/backtotop.js"></script>
+    <!-- responsive menu script -->
+    <script src="js/modernizr.js"></script>
+    <!-- organic tabs script
+    <script src="js/organictabs.jquery.js"></script> -->
+     <!-- <script>
+        $(function () {
+            $("#tabs").organicTabs();
+        });
+    </script> -->
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <%--  <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />--%>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <!-- Primary Page Layout
+	================================================== -->
+    <!-- Delete everything in this .container and get started on your own site! -->
+    <div id="outer-wrap">
+        <div id="inner-wrap">
+            <header id="top" role="banner">
+		<div class="container">
+			<div class="six columns">
+				<a class="nav-btn" id="nav-open-btn" href="#nav">Menu Navigation</a>
+				<a class="logo" href="default.aspx"><img src="img/logo.gif" alt="Marshall Cavendish Education" title="Marshall Cavendish Education" /></a>
+			</div>
+			<div class=" login nine columns right">
+                <asp:Login ID="LoginUser" runat="server" EnableViewState="false" 
+                    RenderOuterTable="false" onloggedin="LoginUser_LoggedIn" 
+                    onauthenticate="LoginUser_Authenticate"  >
+        <LayoutTemplate>
+                <div class="form-login clearfix" style="padding:0px;">        
+                    <asp:TextBox ID="UserName" runat="server" CssClass="form1" placeholder="Email (Username)" 
+                    ValidationGroup="LoginUserVG"></asp:TextBox>                    
+                    <asp:TextBox ID="Password" runat="server" CssClass="form1" TextMode="Password" placeholder="Password " 
+                    ValidationGroup="LoginUserVG"></asp:TextBox>
+                    <asp:LinkButton ID="LoginButton" Width="45"  CssClass="button-style4" runat="server"
+                     CommandName="Login" Text="Login" ValidationGroup="LoginUserVG"/>
+                    <!--<span style=" margin-bottom:-10px; margin-left:10px;"> <a href="ForgotPassword.aspx">Forgot Password</a> | <a href="signup.aspx">Sign Up</a></span>-->
+					<nav class="form-link">
+						<ul>
+							<li><a href="ForgotPassword.aspx">Forgot Password</a></li>
+							<li><a href="signup.aspx">Sign Up</a></li>
+						</ul>
+					</nav>
+                </div>
+                <div class="form-login clearfix" style="margin-bottom:10px;padding:2px; height:12px;">
+                    <span class="failureNotification" >
+                    <asp:Literal ID="FailureText" runat="server"></asp:Literal>
+                    </span> 
+
+                     <asp:CompareValidator Display="Dynamic" ID="CompareValidator5" runat="server" ErrorMessage="Email is required."
+                    ControlToValidate="UserName" ValidationGroup="LoginUserVG" Operator="NotEqual" CssClass="failureNotification"
+                    ValueToCompare="Email (Username)"></asp:CompareValidator>
+
+                    <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator1" runat="server"  ErrorMessage="Password is required."
+                    ControlToValidate="Password" ValidationGroup="LoginUserVG" CssClass="failureNotification"></asp:RequiredFieldValidator>
+                 </div>
+        </LayoutTemplate>
+    </asp:Login>
+    <div id="LoggedInDiv" runat="server">
+      <div class="form-login clearfix" style="margin:10px 0;padding:2px; height:12px;color: #666; text-align:right;">
+       <p>
+  Welcome <asp:HyperLink ID="NameHL" runat="server"></asp:HyperLink> ! | 
+           <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Refresh" 
+               LogoutText="Log Out"  onloggingout="HeadLoginStatus_LoggingOut" 
+               onloggedout="HeadLoginStatus_LoggedOut"/></p>
+    </div>  </div>
+			
+			</div>
+		</div><!-- container -->
+	</header>
+            <nav id="nav" role="navigation">
+		<div class="container">
+			<div class="sixteen columns">
+				<h2 class="block-title">MENU</h2>
+				<ul>
+					<%--<li class="is-active">
+						<a href="default.aspx">HOME</a>
+					</li>--%>
+                    <li >
+						<a href="default.aspx">HOME</a>
+					</li>
+                    <!--
+				 --><li>
+						<a href="promotions.aspx">PROMOTIONS</a>
+					</li><!--
+				 --><li>
+						<a href="rewards.aspx">REWARDS CATALOGUE</a>
+					</li><!--
+				 --><li>
+						<a href="claimpoints.aspx">MEMBER'S AREA</a>
+					</li><!--
+				 --><li id="SignupLi" runat="server">
+						<a href="signup.aspx">SIGN UP</a>
+					</li><!--
+				 --><li>
+						<a href="faq.aspx">FAQs</a>
+					</li><!--
+				 --><li>
+						<a href="contact.aspx">CONTACT US</a>
+					</li>
+				</ul>
+				<a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
+			</div>
+		</div>
+	</nav>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <div class="footer">
+                <div class="container">
+                    <div class="sixteen columns clearfix">
+                        <nav>
+					<ul class="menu-footer">
+						<li><a href="privacy.aspx">Privacy policy</a></li>
+						<li><a href="terms.aspx">Terms &amp; conditions</a></li>
+						<li><a href="contact.aspx">Contact us</a></li>
+						<li><a target="_blank" href="https://www.facebook.com/mceducation">Facebook</a></li>
+						<li><a href="http://edu.marshallcavendish.com">Marshall Cavendish Education</a></li>
+					</ul>
+				</nav>
+                        <p>
+                            &copy; 2014 Marshall Cavendish Education</p>
+                    </div>
+                    <div class="sixteen columns">
+                        <div class="partner">
+                            A loyalty partner of <a href="http://www.letrain.com.sg" target="_blank">Rewardshub</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-top">
+        <a href="#top"><span></span></a>
+    </div>
+    <!-- End Document
+================================================== -->
+    <script src="js/main.js"></script>
+    </form>
+</body>
+</html>

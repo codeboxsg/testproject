@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EE180DC-0505-4272-8DF3-60D080DF52D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RedemptionAdmin</RootNamespace>
+    <AssemblyName>RedemptionAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI, Version=2011.1.519.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\AddUser.aspx" />
+    <Content Include="Admin\Audit.aspx" />
+    <Content Include="Admin\ReportMember.aspx" />
+    <Content Include="Admin\MemberClaimPoints.aspx" />
+    <Content Include="Admin\MemberClaimPointsAck.aspx" />
+    <Content Include="Admin\Client.aspx" />
+    <Content Include="Admin\Company.aspx" />
+    <Content Include="Admin\MemberSetPassword.aspx" />
+    <Content Include="Admin\MemberAddAck.aspx" />
+    <Content Include="Admin\Member.aspx" />
+    <Content Include="Admin\EditUser.aspx" />
+    <Content Include="Admin\MemberClient.aspx" />
+    <Content Include="Admin\MemberUpdate.aspx" />
+    <Content Include="Admin\MemberRedeemByPoints.aspx" />
+    <Content Include="Admin\MemberRedeemByPointsAck.aspx" />
+    <Content Include="Admin\MemberRedeemByProduct.aspx" />
+    <Content Include="Admin\MemberRedeemByProductAck.aspx" />
+    <Content Include="Admin\RedemptionPrintFriendly.aspx" />
+    <Content Include="Admin\ReportRedemption.aspx" />
+    <Content Include="Admin\MemberRewards.aspx" />
+    <Content Include="Admin\UserSetPassword.aspx" />
+    <Content Include="Admin\MemberAdd.aspx" />
+    <Content Include="Admin\StockReturn.aspx" />
+    <Content Include="Admin\StockOut.aspx" />
+    <Content Include="Admin\ReportStockSummary.aspx" />
+    <Content Include="Admin\Event.aspx" />
+    <Content Include="Admin\RedemptionReward.aspx" />
+    <Content Include="Admin\RedemptionByProduct.aspx" />
+    <Content Include="Admin\PromotionByProductProductReward.aspx" />
+    <Content Include="Admin\PromotionByPointsProduct.aspx" />
+    <Content Include="Admin\PromotionByPointsReward.aspx" />
+    <Content Include="Admin\StockReceive.aspx" />
+    <Content Include="Admin\Reward.aspx" />
+    <Content Include="Admin\Product.aspx" />
+    <Content Include="Admin\Promotion.aspx" />
+    <Content Include="Admin\Receipt.aspx" />
+    <Content Include="Admin\MemberUpdateAck.aspx" />
+    <Content Include="Admin\UserList.aspx" />
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="Email\EmailSetPassword.html" />
+    <Content Include="Email\EmailSetPassword.txt" />
+    <Content Include="Email\EmailPasswordReset.html" />
+    <Content Include="Email\EmailPasswordReset.txt" />
+    <Content Include="index.html" />
+    <Content Include="Public\SetPasswordAck.aspx" />
+    <Content Include="Public\ForgotPassword.aspx" />
+    <Content Include="Public\ForgotPasswordSent.aspx" />
+    <Content Include="Public\Login.aspx" />
+    <Content Include="Public\TimeOut.aspx" />
+    <Content Include="Public\SetPassword.aspx" />
+    <Content Include="Styles\default.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\skeleton.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Audit.aspx.cs">
+      <DependentUpon>Audit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Audit.aspx.designer.cs">
+      <DependentUpon>Audit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportMember.aspx.cs">
+      <DependentUpon>ReportMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportMember.aspx.designer.cs">
+      <DependentUpon>ReportMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberClaimPoints.aspx.cs">
+      <DependentUpon>MemberClaimPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberClaimPoints.aspx.designer.cs">
+      <DependentUpon>MemberClaimPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberClaimPointsAck.aspx.cs">
+      <DependentUpon>MemberClaimPointsAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberClaimPointsAck.aspx.designer.cs">
+      <DependentUpon>MemberClaimPointsAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Client.aspx.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Client.aspx.designer.cs">
+      <DependentUpon>Client.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberSetPassword.aspx.cs">
+      <DependentUpon>MemberSetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberSetPassword.aspx.designer.cs">
+      <DependentUpon>MemberSetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberAddAck.aspx.cs">
+      <DependentUpon>MemberAddAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberAddAck.aspx.designer.cs">
+      <DependentUpon>MemberAddAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberClient.aspx.cs">
+      <DependentUpon>MemberClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberClient.aspx.designer.cs">
+      <DependentUpon>MemberClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberUpdate.aspx.cs">
+      <DependentUpon>MemberUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberUpdate.aspx.designer.cs">
+      <DependentUpon>MemberUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByPoints.aspx.cs">
+      <DependentUpon>MemberRedeemByPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByPoints.aspx.designer.cs">
+      <DependentUpon>MemberRedeemByPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByPointsAck.aspx.cs">
+      <DependentUpon>MemberRedeemByPointsAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByPointsAck.aspx.designer.cs">
+      <DependentUpon>MemberRedeemByPointsAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByProduct.aspx.cs">
+      <DependentUpon>MemberRedeemByProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByProduct.aspx.designer.cs">
+      <DependentUpon>MemberRedeemByProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByProductAck.aspx.cs">
+      <DependentUpon>MemberRedeemByProductAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberRedeemByProductAck.aspx.designer.cs">
+      <DependentUpon>MemberRedeemByProductAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RedemptionPrintFriendly.aspx.cs">
+      <DependentUpon>RedemptionPrintFriendly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RedemptionPrintFriendly.aspx.designer.cs">
+      <DependentUpon>RedemptionPrintFriendly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportRedemption.aspx.cs">
+      <DependentUpon>ReportRedemption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportRedemption.aspx.designer.cs">
+      <DependentUpon>ReportRedemption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberRewards.aspx.cs">
+      <DependentUpon>MemberRewards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberRewards.aspx.designer.cs">
+      <DependentUpon>MemberRewards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserSetPassword.aspx.cs">
+      <DependentUpon>UserSetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserSetPassword.aspx.designer.cs">
+      <DependentUpon>UserSetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberAdd.aspx.cs">
+      <DependentUpon>MemberAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberAdd.aspx.designer.cs">
+      <DependentUpon>MemberAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StockReturn.aspx.cs">
+      <DependentUpon>StockReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StockReturn.aspx.designer.cs">
+      <DependentUpon>StockReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StockOut.aspx.cs">
+      <DependentUpon>StockOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StockOut.aspx.designer.cs">
+      <DependentUpon>StockOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportStockSummary.aspx.cs">
+      <DependentUpon>ReportStockSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportStockSummary.aspx.designer.cs">
+      <DependentUpon>ReportStockSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RedemptionReward.aspx.cs">
+      <DependentUpon>RedemptionReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RedemptionReward.aspx.designer.cs">
+      <DependentUpon>RedemptionReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RedemptionByProduct.aspx.cs">
+      <DependentUpon>RedemptionByProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RedemptionByProduct.aspx.designer.cs">
+      <DependentUpon>RedemptionByProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PromotionByProductProductReward.aspx.cs">
+      <DependentUpon>PromotionByProductProductReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PromotionByProductProductReward.aspx.designer.cs">
+      <DependentUpon>PromotionByProductProductReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PromotionByPointsProduct.aspx.cs">
+      <DependentUpon>PromotionByPointsProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PromotionByPointsProduct.aspx.designer.cs">
+      <DependentUpon>PromotionByPointsProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PromotionByPointsReward.aspx.cs">
+      <DependentUpon>PromotionByPointsReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PromotionByPointsReward.aspx.designer.cs">
+      <DependentUpon>PromotionByPointsReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StockReceive.aspx.cs">
+      <DependentUpon>StockReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StockReceive.aspx.designer.cs">
+      <DependentUpon>StockReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reward.aspx.cs">
+      <DependentUpon>Reward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reward.aspx.designer.cs">
+      <DependentUpon>Reward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Promotion.aspx.designer.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Receipt.aspx.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Receipt.aspx.designer.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberUpdateAck.aspx.cs">
+      <DependentUpon>MemberUpdateAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberUpdateAck.aspx.designer.cs">
+      <DependentUpon>MemberUpdateAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Config.cs" />
+    <Compile Include="BL\Crypt.cs" />
+    <Compile Include="BL\EmailManager.cs" />
+    <Compile Include="BL\Logger.cs" />
+    <Compile Include="BL\NRICHelper.cs" />
+    <Compile Include="Public.Master.cs">
+      <DependentUpon>Public.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public.Master.designer.cs">
+      <DependentUpon>Public.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\SetPasswordAck.aspx.cs">
+      <DependentUpon>SetPasswordAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SetPasswordAck.aspx.designer.cs">
+      <DependentUpon>SetPasswordAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ForgotPasswordSent.aspx.cs">
+      <DependentUpon>ForgotPasswordSent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ForgotPasswordSent.aspx.designer.cs">
+      <DependentUpon>ForgotPasswordSent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\TimeOut.aspx.cs">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\TimeOut.aspx.designer.cs">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\SetPassword.aspx.cs">
+      <DependentUpon>SetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SetPassword.aspx.designer.cs">
+      <DependentUpon>SetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RedemptionData\RedemptionData.csproj">
+      <Project>{B32859AB-4162-4564-AE85-CE163F8D10D5}</Project>
+      <Name>RedemptionData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54044</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

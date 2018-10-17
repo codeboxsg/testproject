@@ -1,0 +1,58 @@
+<xml>
+  <appSettings>
+    <!--Client id to define the client site -->
+
+    <add key="EmailPath" value="D:\Dev1Websites\rewardshub.dev1.codebox1.com\Clients\mc\email\" />
+    <!--Emails -->
+    <add key="FromEmail" value="rewardshub@codebox.com.sg" />
+    <add key="FromName" value="RewardsHub" />
+    <add key="EmailFolder" value="\email\" />
+    <!--<add key="EmailLogoUrl" value="img/logo.gif" />-->
+
+    <!--Signup Ack email -->
+    <add key="EmailSignUpSubject" value="MC EduPerks - Signup" />
+    <add key="EmailSignUpTxt" value="EmailSignUp.txt" />
+    <add key="EmailSignUpHtml" value="EmailSignUp.html" />
+    <!--Claim point Approval email -->
+    <add key="EmailClaimPointApprovalSubject" value="MC EduPerks - Accreditation of Points" />
+    <add key="EmailClaimPointApprovalTxt" value="EmailClaimPointApproval.txt" />
+    <add key="EmailClaimPointApprovalHtml" value="EmailClaimPointApproval.html" />
+    
+    <!--ResetPassword email -->
+    <add key="EmailPasswordResetSubject" value="MC EduPerks - Reset Password" />
+    <add key="EmailPasswordResetTxt" value="EmailPasswordReset.txt" />
+    <add key="EmailPasswordResetHtml" value="EmailPasswordReset.html" />
+    <!--Claim point Ack email -->
+    <add key="EmailClaimPointAckSubject" value="MC EduPerks - Redemption by Points" />
+    <add key="EmailClaimPointAckTxt" value="EmailClaimPointAck.txt" />
+    <add key="EmailClaimPointAckHtml" value="EmailClaimPointAck.html" />
+    <!--Claim product Ack email -->
+    <add key="EmailClaimProductAckSubject" value="MC EduPerks - Redemption by Products" />
+    <add key="EmailClaimProductAckTxt" value="EmailClaimProductAck.txt" />
+    <add key="EmailClaimProductAckHtml" value="EmailClaimProductAck.html" />
+
+    <!--EmailRedemptionByPointsDelivery email -->
+    <add key="EmailRedemptionByProductsDeliverySubject" value="MC EduPerks - Redemption by Delivery" />
+    <add key="EmailRedemptionByProductsDeliveryTxt" value="EmailRedemptionByProductsDelivery.txt" />
+    <add key="EmailRedemptionByProductsDeliveryHtml" value="EmailRedemptionByProductsDelivery.html" />
+
+    <!--EmailRedemptionByPointsSelfCollectemail -->
+    <add key="EmailRedemptionByProductsSelfCollectSubject" value="MC EduPerks - Redemption by Self-collection" />
+    <add key="EmailRedemptionByProductsSelfCollectTxt" value="EmailRedemptionByProductsSelfCollect.txt" />
+    <add key="EmailRedemptionByProductsSelfCollectHtml" value="EmailRedemptionByProductsSelfCollect.html" />
+
+    <!--EmailRedemptionByPointsDelivery email -->
+    <add key="EmailRedemptionByPointsDeliverySubject" value="MC EduPerks - Redemption by Delivery" />
+    <add key="EmailRedemptionByPointsDeliveryTxt" value="EmailRedemptionByPointsDelivery.txt" />
+    <add key="EmailRedemptionByPointsDeliveryHtml" value="EmailRedemptionByPointsDelivery.html" />
+
+    <!--EmailRedemptionByPointsSelfCollectemail -->
+    <add key="EmailRedemptionByPointsSelfCollectSubject" value="MC EduPerks - Redemption by Self-collection" />
+    <add key="EmailRedemptionByPointsSelfCollectTxt" value="EmailRedemptionByPointsSelfCollect.txt" />
+    <add key="EmailRedemptionByPointsSelfCollectHtml" value="EmailRedemptionByPointsSelfCollect.html" />
+
+
+  </appSettings>
+
+  </xml>
+

@@ -1,0 +1,8 @@
+C:\Data\Edwin Solutions\Letrain Site\working\solution2010\Redemption\RedemptionAdmin\bin\RedemptionAdmin.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\bin\RedemptionAdmin.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\bin\RedemptionAdmin.pdb
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\bin\RedemptionData.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\bin\RedemptionData.pdb
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\obj\Debug\RedemptionAdmin.csprojResolveAssemblyReference.cache
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\obj\Debug\RedemptionAdmin.dll
+C:\Data\Edwin Solutions\Letrain Site\source\VSSolution2010\RedemptionAdmin\obj\Debug\RedemptionAdmin.pdb

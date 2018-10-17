@@ -1,0 +1,717 @@
+@import url(http://fonts.googleapis.com/css?family=Asap);
+body,h1 ,h2 ,h3 ,h4 ,h5,h6 {
+	font-family: 'Asap', sans-serif;
+}
+
+body {
+	font-size:13px;
+}
+
+img.resize {
+	width:100%;
+}
+
+@media \0screen {
+  img.resize { 
+  	width: auto; /* for ie 8 */
+  }
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right !important;
+}
+
+.logo {
+	margin:13px 0 21px 0;
+	display:block;
+	float:left;
+}
+
+/*---  main-menu  ---*/
+
+#top,#nav .block {
+	background:none;
+}
+
+#nav li {
+	border-right:none;
+	margin:0;
+	padding:10px;
+}
+
+#nav li a {
+	color:#f0f5f9;
+	text-decoration:none;
+	font-weight:200;
+	font-size:13px;
+}
+
+#nav li a:focus, #nav li a:hover {
+	background:none;
+}
+
+#nav li a:focus, #nav li a:hover,
+#nav li.is-active a {
+	color:#ccc;
+}
+
+#nav ul {
+	background-color:#e45317;
+	-webkit-border-radius: 7px; 
+	-moz-border-radius: 7px; 
+	border-radius: 7px;
+}
+
+nav.form-link {
+	font-size:11px;
+}
+
+/*---  main-menu  ---*/
+
+/*---  main-content  ---*/
+
+.banner {
+	position:relative;
+	text-align:center;
+}
+
+.login {
+	margin-top:30px;
+}
+
+.form-login {
+	background:#fff;
+	padding:10px 0;
+	text-align:left;
+	-webkit-border-radius: 17px 17px 0 0; 
+	-moz-border-radius: 17px 17px 0 0; 
+	border-radius: 17px 17px 0 0;
+}
+
+.form-login form {
+	margin-bottom:0;
+}
+
+input[type="text"].form1, input[type="password"].form1, input[type="email"].form1, textarea.form1, select.form1,.form1 {
+	background:#ecf4f7;
+	width:90%;
+	border:none;
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+	padding:10px 3%;
+	margin-bottom:20px;
+}
+
+.form-login input[type="text"],.form-login input[type="password"] {
+	width:120px;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+.form-login ul {
+	float:left;
+	margin-bottom:0;
+	padding-top:15px;
+}
+
+.form-login li {
+	display:inline;
+	border-right:1px solid #ccc;
+	padding:0 5px;
+	margin:0;
+}
+
+.form-login li:last-child {
+	border:none;
+}
+
+.form-login button,.form-login button:hover {
+	background:#e45317;
+	height:36px;
+	width:50px;
+	float:left;
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+
+.button-style,.button-style:hover,
+.button-style-2,.button-style-2:hover {
+	background:url(../img/button.png) no-repeat left top;
+	width:81px;
+	padding: 3px 0;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	color:#fff !important;
+	margin:0;
+	border:none;
+	text-shadow:0 0 #fff;
+	font-weight:normal;
+}
+.button-style3,.button-style3:hover {
+	background:url(../img/button.png) no-repeat left top;
+
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	color:#fff !important;
+	margin:0;
+	border:none;
+	text-shadow:0 0 #fff;
+	font-weight:normal;
+	background:#e45317;
+	padding: 5px 0;
+	width:50px;
+
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+.button-style4,.button-style4:hover {
+	background:url(../img/button.png) no-repeat left top;
+
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	color:#fff !important;
+	margin:0;
+	border:none;
+	text-shadow:0 0 #fff;
+	font-weight:normal;
+	background:#e45317;
+	padding: 5px 0;
+	width:50px;
+	float:left;
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+.quote-text {
+	color:#ccc;
+	font-size:38px;
+	line-height:45px;
+	margin-top:15px;
+	text-align:justify;
+}
+
+.color {
+	color:#f15d24;
+}
+
+.title {
+	margin-bottom:15px;
+}
+
+.bg1 {
+	background:#85be13;
+}
+
+.title h4 {
+	color:#fff;
+	padding:8px;
+}
+
+.box {
+	margin:15px 5px;
+	-moz-box-shadow:    0px 0px 7px 0px #999;
+	-webkit-box-shadow: 0px 0px 7px 0px #999;
+	box-shadow:         0px 0px 7px 0px #999;
+}
+
+.box-image {
+	display:block;
+	width:100%;
+	height:168px;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.box-image img {
+	width:100%;
+}
+
+.box-image .arrow {
+	background:url(../img/brand/arrow.png) no-repeat left top;
+	width:17px;
+	height:12px;
+	position:absolute;
+	bottom:0;
+	left:15px;
+}
+
+.box-info {
+	padding:0 10px 32px 10px;
+}
+
+.box-info h6 {
+	margin-top:5px;
+}
+
+.box-info h6 span {
+	font-weight:700;
+}
+
+.box-info p {
+	margin:20px 0;
+}
+
+	/*---   Brand   ---*/
+	
+	nav.page-link ul {
+		text-align:right;
+	}
+	
+	nav.page-link li {
+		display:inline;
+		border-right:1px solid #ccc;
+		padding:0 5px;
+	}
+	
+	nav.page-link li:last-child {
+		border:none;
+	}
+	
+	nav.page-link li a {
+		text-decoration:none;
+		color:#ccc;
+	}
+	
+	nav.page-link li a:hover,nav.page-link li a.active {
+		color:#000;
+	}
+	
+	/*---   Brand   ---*/
+	
+	/*---   Member   ---*/
+	
+	.contact-info p {
+		margin-bottom:8px;
+	}
+	
+	.contact-info a {
+		color:#e45317;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	
+	.contact-info .align,.contact-info .align2 {
+		width:50px;
+		float:left;
+	}
+	
+	.contact-info .align2 {
+		width:120px;
+	}
+	
+	.bg2 {
+		background:#13bbbe;
+	}
+	
+	#tabs,#tabs .list-wrap,#tabs .nav {
+		position:relative;
+	}
+	
+	#tabs .list-wrap { padding: 10px; margin: -1px 0 15px 0; border-top: 1px solid #666;z-index: 0; }
+
+	#tabs ul { list-style: none; }
+	#tabs ul li a { display: block; padding: 4px; color: #666; }
+	#tabs ul li a:hover { color: #e45317; }
+
+	#tabs .nav { overflow: hidden; margin-bottom: 0;z-index: 9999; }
+	#tabs .nav li { float: left; margin: 0; border-right: 1px solid #666; }
+	#tabs .nav li.last { margin-right: 0; }
+	#tabs .nav li a { display: block; padding: 5px 15px; color: #666; font-size: 14px; text-align: center; text-decoration: none; }
+
+	#tabs li a.current,#tabs li a.current:hover { color: #e45317; border-bottom: 1px solid #fff; }
+	#tabs .nav li a:hover, #tabs .nav li a:focus { }
+	
+	#tabs .hide { position: absolute; top: -9999px; left: -9999px; }
+	
+	table {
+		margin-bottom:10px;
+	}
+	
+	table tr,table td {
+		text-align:left;
+	}
+	
+	table tr {
+		border-bottom: 1px dotted #ccc;
+	}
+	
+	table td {
+		padding:7px 0;
+		font-weight:bold;
+		color:#666;
+	}
+	
+	.member-submit a {
+		float:right;
+		margin-bottom:40px !important;
+	}
+	
+	hr.style1 {
+		border-width:5px 0 0;
+		margin-bottom:20px;
+	}
+	
+	/*---   Member   ---*/
+	
+	/*---   Sign up   ---*/
+	
+	.bg3 {
+		background:#a23fc4;
+	}
+	
+	input[type="text"].form1.bg, input[type="password"].form1.bg, input[type="email"].form1.bg, textarea.form1.bg, select.form1.bg,.form1.bg {
+		background:#f7f2ec;
+	}
+	
+	.form1 label {
+		font-weight:normal;
+		color:#777;
+		float:left;
+	}
+	
+	.form1 input[type="date"] {
+		border:none;
+		background:transparent;
+	}
+	
+	.sign-up a {
+		float:right;
+		margin-right:3% !important;
+		margin-bottom:40px !important;
+		padding: 0 !important;
+	}
+	
+	input.checkbox[type="checkbox"],input.radio[type="radio"] {
+		margin:2px 10px 0 0;
+		float:left;
+	}
+	
+	.form1 option {
+		background:#fff;
+	}
+	
+	.styled-select {
+		float:left;
+		margin:0 5px 0 0;
+		overflow: hidden;
+		background: url(../img/sub/select.png) no-repeat right center;
+	}
+	
+	.styled-select select {
+		background: transparent;
+		margin:0;
+		padding:0;
+		width: auto;
+		border: 0;
+		border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		text-indent: 1px;
+		text-overflow: '';
+	}
+	
+	div.selector span{
+		padding-right:10px;
+	}
+	
+	.gender {
+		float:left;
+		padding:0 10px;
+	}
+	
+	.gender label {
+		float:right;
+	}
+	
+	.disclaimer label,.newsletter label {
+		font-weight:normal;
+	}
+	
+	
+	/*---   Sign up   ---*/
+	
+	/*---   Products   ---*/
+	
+	.bg4 {
+		background:#2a77a1;
+	}
+	
+	.products .box-info h6 {
+		color:#e45317;
+	}
+	
+	/*---   Products   ---*/
+	
+	/*---   Promotions   ---*/
+	
+	.bg5 {
+		background:#c50849;
+	}
+	
+	.button-style-2,.button-style-2:hover {
+		background:url(../img/button-2.png) no-repeat left top;
+	}
+	
+	.promotions .box {
+		background:#e45317;
+		color:#fff;
+	}
+	.box-info
+	.promotions .box-image .arrow {
+		background:url(../img/sub/arrow.png) no-repeat left bottom;
+	}
+	
+	.promotions .box-info h6 {
+		font-weight:bold;
+		color:#fff;
+	}
+	
+	.promotions .box-info p {
+		margin:10px 0;
+	}
+	
+	/*---   Promotions   ---*/
+
+/*---  main-content  ---*/
+
+/*---  footer  ---*/
+
+.footer {
+	background:#666;
+	color:#fff;
+	padding:15px 0;
+	font-size:13px;
+}
+
+.menu-footer {
+	float:left;
+	margin-bottom:5px;
+}
+
+.menu-footer li {
+	display:inline;
+	border-right:1px solid #fff;
+	padding:0 8px;
+}
+
+.menu-footer li:first-child {
+	padding-left:0;
+}
+
+.menu-footer li:last-child {
+	border:none;
+	padding-right:0;
+}
+
+.menu-footer li a,.footer .partner a {
+	color:#fff;
+	text-decoration:none;
+}
+
+.footer .partner {
+	margin-bottom:10px;
+	float:right;
+}
+
+.footer p {
+	float:right;
+	margin-bottom:5px;
+} 
+
+/*---  footer  ---*/
+
+.home_style .quote-text {font-size: 40px;}
+.quote-text {text-align: left; font-size: 30px; margin-bottom: 20px;line-height: 120%;}
+.quote-text .quote-bg1{background:url(../img/quote_bg1.gif) no-repeat left top;}
+.quote-text .quote-bg2{background:url(../img/quote_bg2.gif) no-repeat right bottom; padding: 25px 30px;}
+.taglines.home .quote-bg2{padding-bottom: 10px;}
+
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+	#nav li a {
+		font-size:12px;
+	}
+	
+	.login {
+		width:362px !important;
+		margin-top:0;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	
+	.form-login input[type="text"],.form-login input[type="password"] {
+		width:42%;
+		margin:0 0 10px 0;
+	}
+	
+	.form-login input[type="password"] {
+		float:right;
+	}
+	
+	.form-login button,.form-login button:hover {
+		float:right;
+	}
+	
+	#tabs .nav li a {
+		font-size:12px;
+		padding:5px 10px;
+	}
+	
+	.logo {
+		text-align:center;
+		width:80%;
+	}
+	
+	.logo img {
+		max-width:100%;
+		height:auto;
+	}
+	
+	.footer p,.footer .partner {
+		width:100%;
+		text-align:center;
+	}
+	.home_style .quote-text {font-size: 30px;}
+	.quote-text .quote-bg1{background-size: 20px}
+	.quote-text .quote-bg2{background-size: 20px; padding: 20px;}
+	.quote-text {font-size: 25px;}
+}
+
+@media only screen and (max-width: 480px){
+	.quote-text,.products .quote-text {font-size: 20px;}
+	#tabs .nav li a {
+		font-size:10px;
+		padding:5px 7px;
+	}
+}
+
+
+/*
+Back to top button 
+*/
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	right:10px;
+}
+#back-top a {
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #999;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 35px;
+	height: 35px;
+	display: block;
+	margin:0 auto 7px auto;
+	background: #999 url(../img/up-arrow2.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+
+/*---   fix ie   ---*/
+
+.ie8 #outer-wrap,.ie8 #inner-wrap,
+.ie7 #outer-wrap,.ie7 #inner-wrap{
+	min-width:945px;
+}
+
+.ie7 #nav li {
+	float:left;
+}
+
+.ie7 #nav ul {
+	padding:0 50px;
+}
+
+.ie .form1 option {
+	background:none;
+}
+
+/*---   fix ie   ---*/
+
+
+
+/*---   added by for login errors  ---*/
+
+.failureNotification
+{
+    height:20px;
+    font-size: 1.0em;
+    color: Red;
+}
+
+span.redemption label
+{
+    display: inline;
+font-weight: bold;
+font-size: 11px;
+padding :0px 5px 0px 5px;
+    }
+    
+    span.signup label
+{
+    display: inline;
+font-weight: normal;
+font-size: 11px;
+padding :0px 5px 0px 5px;
+float: none;
+    }
+    div.check label
+    {  display: inline;}
+    
+.products .box-info{min-height: 160px; position: relative}
+.promotions .box-info{min-height: 218px;position: relative}    
+.home_style .brand .box-info{min-height: 160px;position: relative}
+.box_button{position: absolute; bottom: 10px; left: 10px;}
+.sign_up .disclaimer label{display: none;}
+.sign_up .newsletter label{display: none;}
+
+.faq_q{margin: 0 0 0 0;color:#13BBBE;}
+.faq_a {margin: 0 0 15px 0;}
+
+.privacy_style p{margin-bottom: 10px;}
+form {margin-bottom: 0px;}
+.term_style p{margin-bottom: 10px;}
+.term_style ol ol {list-style: none; width: 95%; margin: 2% 0 2% 5%;}
+.term_style ol ol li span{float: left; width: 20px; margin-right: 5px;}
+.term_style ol ol li p{float: left; width: 90%; margin-bottom: 0px;line-height: 18px;}
+.term_style ol ol li:before,.term_style ol ol li:after {content: " ";display: table;}
+.term_style ol ol li:after {clear: both;}
+.term_style ol ol li {*zoom: 1;}
+.term_style .note{font-style: italic; font-size: 12px;}
+
+.taglines p{margin-bottom: 0px;}

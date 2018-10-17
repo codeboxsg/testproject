@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{921D6CFA-8956-4CE2-A3E1-3F72577A95C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Redemption</RootNamespace>
+    <AssemblyName>Redemption</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI, Version=2011.1.519.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="ClaimPoints.aspx" />
+    <Content Include="ClaimPointsAck.aspx" />
+    <Content Include="Email\config.xml" />
+    <Content Include="Email\EmailClaimPointAck.html" />
+    <Content Include="Email\EmailClaimPointAck.txt" />
+    <Content Include="Email\EmailClaimPointApproval.html" />
+    <Content Include="Email\EmailClaimPointApproval.txt" />
+    <Content Include="Email\EmailClaimProductAck.html" />
+    <Content Include="Email\EmailClaimProductAck.txt" />
+    <Content Include="Email\EmailRedemptionByPointsDelivery.html" />
+    <Content Include="Email\EmailRedemptionByPointsDelivery.txt" />
+    <Content Include="Email\EmailRedemptionByPointsSelfCollect.html" />
+    <Content Include="Email\EmailRedemptionByPointsSelfCollect.txt" />
+    <Content Include="Email\EmailRedemptionByProductsDelivery.html" />
+    <Content Include="Email\EmailRedemptionByProductsDelivery.txt" />
+    <Content Include="Email\EmailRedemptionByProductsSelfCollect.html" />
+    <Content Include="Email\EmailRedemptionByProductsSelfCollect.txt" />
+    <Content Include="img\banner-contact.jpg" />
+    <Content Include="img\banner-faq.jpg" />
+    <Content Include="img\quote_bg1.gif" />
+    <Content Include="img\quote_bg2.gif" />
+    <Content Include="UpdateParticularsAck.aspx" />
+    <Content Include="ResetPasswordAck.aspx" />
+    <Content Include="Timeout.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Email\EmailPasswordReset.html" />
+    <Content Include="Email\EmailPasswordReset.txt" />
+    <Content Include="ForgotPasswordSent.aspx" />
+    <Content Include="RedeemByProductAck.aspx" />
+    <Content Include="RedeemByProduct.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="SignUpAck.aspx" />
+    <Content Include="Email\EmailSignUp.html" />
+    <Content Include="Email\EmailSignUp.txt" />
+    <Content Include="SignUpExisting.aspx" />
+    <Content Include="SignUpNew.aspx" />
+    <Content Include="RedeemByPointsAck.aspx" />
+    <Content Include="RedeemByPoints.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="css\base.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\ie.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\skeleton.css" />
+    <Content Include="css\step4.css" />
+    <Content Include="css\uniform.default.css" />
+    <Content Include="faq.aspx" />
+    <Content Include="img\apple-touch-icon-72x72.png" />
+    <Content Include="img\apple-touch-icon.png" />
+    <Content Include="img\banner-member.jpg" />
+    <Content Include="img\banner-promotion.jpg" />
+    <Content Include="img\banner-redemption.jpg" />
+    <Content Include="img\banner-signup.jpg" />
+    <Content Include="img\banner-sub.jpg" />
+    <Content Include="img\banner-sub2.jpg" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\banner2.jpg" />
+    <Content Include="img\brand\arrow.png" />
+    <Content Include="img\brand\brand-1.jpg" />
+    <Content Include="img\brand\brand-2.jpg" />
+    <Content Include="img\brand\brand-3.jpg" />
+    <Content Include="img\brand\brand-5.jpg" />
+    <Content Include="img\button-2.gif" />
+    <Content Include="img\button-2.png" />
+    <Content Include="img\button.gif" />
+    <Content Include="img\button.png" />
+    <Content Include="img\close-btn.png" />
+    <Content Include="img\close-btn.svg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\img-text-sub.gif" />
+    <Content Include="img\img-text.gif" />
+    <Content Include="img\logo.gif" />
+    <Content Include="img\map.gif" />
+    <Content Include="img\nav-icon.png" />
+    <Content Include="img\nav-icon.svg" />
+    <Content Include="img\sub\arrow.png" />
+    <Content Include="img\sub\promo-1.jpg" />
+    <Content Include="img\sub\promo-2.jpg" />
+    <Content Include="img\sub\promo-3.jpg" />
+    <Content Include="img\sub\select.png" />
+    <Content Include="img\up-arrow.png" />
+    <Content Include="img\up-arrow2.png" />
+    <Content Include="js\backtotop.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery.uniform.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\organictabs.jquery.js" />
+    <Content Include="js\placeholder.js" />
+    <Content Include="members.aspx" />
+    <Content Include="privacy.aspx" />
+    <Content Include="promotions.aspx" />
+    <Content Include="rewards.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="Status.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="terms.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="UpdateParticulars.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Crypt.cs" />
+    <Compile Include="BL\EmailManager.cs" />
+    <Compile Include="BL\NRICHelper.cs" />
+    <Compile Include="ClaimPoints.aspx.cs">
+      <DependentUpon>ClaimPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClaimPoints.aspx.designer.cs">
+      <DependentUpon>ClaimPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Config.cs" />
+    <Compile Include="ClaimPointsAck.aspx.cs">
+      <DependentUpon>ClaimPointsAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClaimPointsAck.aspx.designer.cs">
+      <DependentUpon>ClaimPointsAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateParticularsAck.aspx.cs">
+      <DependentUpon>UpdateParticularsAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateParticularsAck.aspx.designer.cs">
+      <DependentUpon>UpdateParticularsAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordAck.aspx.cs">
+      <DependentUpon>ResetPasswordAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordAck.aspx.designer.cs">
+      <DependentUpon>ResetPasswordAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timeout.aspx.cs">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timeout.aspx.designer.cs">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordSent.aspx.cs">
+      <DependentUpon>ForgotPasswordSent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordSent.aspx.designer.cs">
+      <DependentUpon>ForgotPasswordSent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedeemByProductAck.aspx.cs">
+      <DependentUpon>RedeemByProductAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedeemByProductAck.aspx.designer.cs">
+      <DependentUpon>RedeemByProductAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedeemByProduct.aspx.cs">
+      <DependentUpon>RedeemByProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedeemByProduct.aspx.designer.cs">
+      <DependentUpon>RedeemByProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpAck.aspx.cs">
+      <DependentUpon>SignUpAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpAck.aspx.designer.cs">
+      <DependentUpon>SignUpAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpExisting.aspx.cs">
+      <DependentUpon>SignUpExisting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpExisting.aspx.designer.cs">
+      <DependentUpon>SignUpExisting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpNew.aspx.cs">
+      <DependentUpon>SignUpNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpNew.aspx.designer.cs">
+      <DependentUpon>SignUpNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedeemByPointsAck.aspx.cs">
+      <DependentUpon>RedeemByPointsAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedeemByPointsAck.aspx.designer.cs">
+      <DependentUpon>RedeemByPointsAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Logger.cs" />
+    <Compile Include="RedeemByPoints.aspx.cs">
+      <DependentUpon>RedeemByPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedeemByPoints.aspx.designer.cs">
+      <DependentUpon>RedeemByPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="faq.aspx.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="faq.aspx.designer.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="members.aspx.cs">
+      <DependentUpon>members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="members.aspx.designer.cs">
+      <DependentUpon>members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="promotions.aspx.cs">
+      <DependentUpon>promotions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="promotions.aspx.designer.cs">
+      <DependentUpon>promotions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rewards.aspx.cs">
+      <DependentUpon>rewards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rewards.aspx.designer.cs">
+      <DependentUpon>rewards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Status.aspx.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="terms.aspx.cs">
+      <DependentUpon>terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="terms.aspx.designer.cs">
+      <DependentUpon>terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateParticulars.aspx.cs">
+      <DependentUpon>UpdateParticulars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateParticulars.aspx.designer.cs">
+      <DependentUpon>UpdateParticulars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RedemptionData\RedemptionData.csproj">
+      <Project>{B32859AB-4162-4564-AE85-CE163F8D10D5}</Project>
+      <Name>RedemptionData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site2.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
