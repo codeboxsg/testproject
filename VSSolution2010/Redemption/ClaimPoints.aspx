@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server">
-    </asp:ScriptManager>
+    </asp:ScriptManager>  
     <div id="main" role="main">
         <div id="LoggedInDiv" runat="server" visible="true" class="container">
             <div class="sixteen columns">
